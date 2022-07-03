@@ -173,5 +173,9 @@ bool Bint::isNegative() const {
 	return last;
 }
 
+std::optional<int64_t> Bint::to_number() const
+{
+	return number.size() != 1 ? std::optional<int64_t>{} : number.front();
+}
 
 } // namespace

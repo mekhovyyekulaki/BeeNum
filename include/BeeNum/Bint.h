@@ -30,6 +30,7 @@
 #include <string>
 #include <vector>
 #include <functional>
+#include <optional>
 #ifdef USE_IOSTREAM
 #include <iostream>
 #endif
@@ -71,6 +72,9 @@ public:
 	std::string toString() const;
 	std::string base(const uint64_t base) const;
 	operator std::string() const;
+
+	// Regular integer representation
+	std::optional<int64_t> to_number() const;
 
 	// Bits
 	Bint operator & (const Bint& a) const;
