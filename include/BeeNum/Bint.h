@@ -53,7 +53,6 @@ private:
 	void setNumber(const std::string& num, int base);
 	bool isNegative() const;
 	std::string base2(const uint64_t base) const;
-	Bint& urshift(const uint64_t shift);
 	void addUintAt(uint64_t index, uint64_t operand);
 
 public:
@@ -122,6 +121,7 @@ public:
 	Bint& operator <<= (const uint64_t shift);
 	Bint operator >> (const uint64_t shift) const;
 	Bint& operator >>= (const uint64_t shift);
+	Bint& urshift(const uint64_t shift);
 
 	// Comparison
 	bool operator <= (const Bint &b) const;
