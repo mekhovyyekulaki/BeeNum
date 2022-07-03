@@ -2,6 +2,7 @@
 #include <string>
 #include <cassert>
 #include <map>
+#define USE_IOSTREAM
 #include <BeeNum/Brat.h>
 #include <chrono>
 

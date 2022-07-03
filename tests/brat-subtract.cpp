@@ -2,6 +2,7 @@
 #include <string>
 #include <cassert>
 #include <vector>
+#define USE_IOSTREAM
 #include <BeeNum/Brat.h>
 
 using namespace BeeNum;

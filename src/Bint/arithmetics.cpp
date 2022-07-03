@@ -24,7 +24,7 @@
  */
 
 #include <BeeNum/Bint.h>
-
+#include <stdexcept>
 
 namespace BeeNum {
 

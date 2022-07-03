@@ -30,7 +30,9 @@
 #include <string>
 #include <vector>
 #include <functional>
+#ifdef USE_IOSTREAM
 #include <iostream>
+#endif
 
 
 namespace BeeNum {
@@ -139,9 +141,11 @@ public:
 	bool operator > (const int64_t a) const;
 };
 
+#ifdef USE_IOSTREAM
 // Input-output
 std::ostream& operator << (std::ostream& strm, const Bint& a);
 std::istream& operator >> (std::istream& strm, Bint& a); 
+#endif
 
 // Left side operators for int 
 // Arithmetics

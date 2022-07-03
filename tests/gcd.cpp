@@ -2,6 +2,7 @@
 #include <string>
 #include <cassert>
 #include <vector>
+#define USE_IOSTREAM
 #include <BeeNum/Bint.h>
 #include <BeeNum/Math.h>
 

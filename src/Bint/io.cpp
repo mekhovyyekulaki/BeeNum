@@ -24,6 +24,7 @@
  */
 
 #include <algorithm>
+#include <iosfwd>
 #include <BeeNum/Bint.h>
 
 

@@ -3,6 +3,7 @@
 #include <cassert>
 #include <map>
 #include <chrono>
+#define USE_IOSTREAM
 #include <BeeNum/Brat.h>
 
 using namespace BeeNum;

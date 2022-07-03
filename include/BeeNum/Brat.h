@@ -100,11 +100,13 @@ public:
 	//*/
 };
 
+#ifdef USE_IOSTREAM
 // Input-output
 std::ostream& operator << (std::ostream& strm, const Brat& a);
 /*
 std::istream& operator >> (std::istream& strm, Brat& a); 
 //*/
+#endif
 // Left side operators for int 
 // Arithmetics
 Brat operator + (const int64_t a, const Brat& b);
