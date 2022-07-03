@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-#include <iosfwd>
+#include <iostream>
 #include <BeeNum/Brat.h>
 
 
