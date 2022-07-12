@@ -39,6 +39,7 @@ Bint& Bint::bitOperation(const Bint& a, std::function<uint64_t(uint64_t&,const u
 		number[j] = lambda(number[j], bin[j]);
 	}
 
+	eraseLeadingSign();
 	return *this;
 }
 
