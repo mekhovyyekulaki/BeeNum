@@ -30,7 +30,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
 
 add_library(BeeNum SHARED ${BINT_SRC} ${MATH_SRC})
 add_library(BeeNum_static STATIC $<TARGET_OBJECTS:shareobjects>)
-set_target_properties(BeeNum_static PROPERTIES OUTPUT_NAME BeeNum)
 
 # tests
 option(BEENUM_TESTS "Build BeeNum tests" OFF)
