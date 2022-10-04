@@ -51,7 +51,7 @@ Bint& Bint::operator >>= (const uint64_t shift) {
 
 	bool neg = isNegative();
 
-	uint64_t mask = (1 << sh) - 1;
+	uint64_t mask = ((uint64_t)1 << sh) - 1;
 	uint64_t maskShift = 64 - sh;
 	uint64_t carry = 0;
 
@@ -92,7 +92,7 @@ Bint& Bint::urshift(const uint64_t shift) {
 		}
 	}
 
-	uint64_t mask = (1 << sh) - 1;
+	uint64_t mask = ((uint64_t)1 << sh) - 1;
 	uint64_t maskShift = 64 - sh;
 	uint64_t carry = 0;
 
